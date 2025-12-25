@@ -1,3 +1,0 @@
-/home/sunxuehang/code/StateManager/StateManager/TestInCppProject/build/CMakeFiles/rebuild_cache.dir
-/home/sunxuehang/code/StateManager/StateManager/TestInCppProject/build/CMakeFiles/edit_cache.dir
-/home/sunxuehang/code/StateManager/StateManager/TestInCppProject/build/CMakeFiles/state_detection.dir
