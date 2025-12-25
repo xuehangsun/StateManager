@@ -1,0 +1,8 @@
+# ninja log v5
+0	575	1766674500545892475	CMakeFiles/state_detection.dir/src/main.cpp.o	405719e3d134c16c
+0	589	1766674500561892658	CMakeFiles/state_detection.dir/src/StateManager.cpp.o	642b22483985cc41
+589	632	1766674500605893161	../bin/state_detection	53e13ff0a4d781a4
+0	531	1766674635195341115	CMakeFiles/state_detection.dir/src/StateManager.cpp.o	642b22483985cc41
+531	572	1766674635235341520	../bin/state_detection	53e13ff0a4d781a4
+0	525	1766674842513287582	CMakeFiles/state_detection.dir/src/StateManager.cpp.o	642b22483985cc41
+525	566	1766674842557287966	../bin/state_detection	53e13ff0a4d781a4
