@@ -5,3 +5,9 @@
 # Python artifacts
 __pycache__/
 *.pyc
+
+# Build outputs
+bin/
+build/
+TestInCppProject/bin/
+TestInCppProject/build/
