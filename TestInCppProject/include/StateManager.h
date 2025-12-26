@@ -43,7 +43,8 @@ class StateManager{
 
         bool log_out_bool;
 
-        std::ofstream state_outfile;
+        std::ofstream state_outfile;      // 消抖后的状态
+        std::ofstream state_raw_outfile;  // 未消抖的原始判定
         std::ofstream fft_input_file;
         std::ofstream fft_output_file;
         std::ofstream decision_tree_input_file;

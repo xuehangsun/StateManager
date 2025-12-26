@@ -26,6 +26,8 @@ StateManager::StateManager() : fft_len(512), sample_freq(100.0), atomic_phone_st
 
     state_outfile.open("../status_log.txt");
     state_outfile << std::fixed << std::setprecision(3);
+    state_raw_outfile.open("../status_log_raw.txt");
+    state_raw_outfile << std::fixed << std::setprecision(3);
     // fft_input_file.open("../fft_input.txt"); 
     // fft_input_file << std::fixed << std::setprecision(3);
     // fft_output_file.open("../fft_output.txt"); 
@@ -103,6 +105,16 @@ void StateManager::flashPhoneState(){
         temp_state = PhoneState::VehicleMounted;
     else 
         temp_state = PhoneState::HandHold;
+
+    // 记录未消抖的原始判定结果
+    if(log_out_bool){
+        if(temp_state == PhoneState::VehicleMounted)
+            state_raw_outfile << current_ts << ",1" << endl;
+        else if(temp_state == PhoneState::HandHold)
+            state_raw_outfile << current_ts << ",0" << endl;
+        else
+            state_raw_outfile << current_ts << ",-1" << endl;
+    }
 
     // 延迟切换
     if(!delay_transfer) // 如果不是延迟切换，直接改变当前状态
